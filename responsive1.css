@@ -1,0 +1,36 @@
+@media (max-width: 768px) {
+    
+    * {
+        overflow-x: hidden;
+    }
+
+    .intro h1 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    /* GAME SECTION */
+
+    .game-sect-1 {
+        justify-content: center;
+        gap: 50px;
+    }
+
+    .rules ol {
+        list-style: none;
+    }
+
+    .rules ol li {
+        margin: 3% auto;
+        font-size: 18px;
+    }
+
+    .quit-rules {
+        font-size: 18px;
+        padding: 20px 20px;
+        /* width: 500px; */
+    }
+
+    
+
+}

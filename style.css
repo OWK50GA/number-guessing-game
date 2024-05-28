@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    margin: 0% auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #a1c9f2;
+    padding: 7%;
+    font-family: "Montserrat", sans-serif;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.intro h1 {
+    font-size: 45px;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+button {
+    padding: 20px 30px;
+    border-radius: 3%;
+    border: none;
+    background-color: #acffac;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2), 0px 0px 0px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* GAME SECTION */
+
+.game-section {
+    display: none;
+}
+
+.game-sect-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 150px;
+    margin: 8% auto;
+}
+
+.computer-num, .player-guess, .check {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.game-sect-3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.computer-num button, .check button {
+    margin: 15% auto;
+}
+
+.player-guess input {
+    width: 300px;
+    height: 50px;
+    
+    padding: 2% 5%;
+    font-size: 20px;
+    margin: 7% auto;
+}
+
+button {
+    font-size: 20px;
+}
+
+.score-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 25px;
+    width: 250px;
+    height: 70px;
+    background-color: #ffd700;
+}
+
+.message {
+    align-self: center;
+    margin: 0 auto 7% auto;
+    /* animation: infinite 2s bounce; */
+}
+
+.quit {
+    margin: 5% auto;
+    width: 20%;
+}
+
+.rules {
+    margin: 7% auto;
+    display: none;
+    width: 70%;
+    font-size: 20px;
+}

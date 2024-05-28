@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive1.css">
+    <link rel="stylesheet" href="responsive2.css">
+    <script src="app.js" defer></script>
+    <title>Number Guessing Game</title>
+</head>
+<body>
+    <main>
+        <div class="intro">
+            <h1>Guess the number in the box (out of 100)</h1>
+            <div>
+                <button class="rules-btn">See Rules</button>
+                <button class="play-btn">Play Game</button>
+            </div>
+        </div>
+
+        <div class="rules">
+            <ol>
+                <li>
+                    The guess is any number between 1 and 100, 
+                    making it almost impossible to win the game, 
+                    especially twice in a row
+                </li>
+                <li>The player has just three guesses under
+                    his belt to tell what number is there. 
+                </li>
+                <li>
+                    After the first two tries, the player is told he is wrong
+                    if he is, and given a third try to guess the number.
+                    if he is still wrong, he loses the round and 0 is added to
+                    his scoreboard, with 1 added to the number of games he's played.
+                </li>
+                <li>
+                    After the player fails a round, the hidden number for that round is shown
+                </li>
+                <li>
+                    The 'Play Game' button displays the game section in favour
+                    of the rules section. The 'See Rules' button does the opposite.
+                </li>
+                <li>
+                    On inputting any guess, the user must click on the 'Check' button
+                    to see whether they are correct.
+                </li>
+                <li>The reset button is used to reboot the game, killing everything
+                    that has previously been recorded up to that time.
+                </li>
+                <li>
+                    The 'Quit Game' button removes the game section from display.
+                    The 'Quit Rules' button removes the rules section from display.
+                    <br>Activating one section automatically disables the other.
+                </li>
+                <li>Goodluck to the player!</li>
+            </ol>
+
+            <div class="quit">
+                <button class="quit-rules">Quit Rules</button>
+            </div>
+        </div>
+
+        <div class="game-section">
+            <div class="game-sect-1">
+                <div class="computer-num">
+                    <h2>My Guess</h2>
+                    <button class="computer-guess">...</button>
+                </div>
+                <div class="player-guess">
+                    <h2>Your Guess</h2>
+                    <input type="number" name="number" id="user-guess" placeholder="...">
+                </div>
+                <div class="check">
+                    <h2>Check</h2>
+                    <button class="check-btn" type="submit">Check</button>
+                </div>
+            </div>
+
+            <div class="game-sect-3">
+                <h2 class="message"></h2>
+            </div>
+
+            <div class="game-sect-3">
+                <div class="score-div">
+                    <h3>Your Score: </h3>
+                    <h3 class="score">0/0</h3>
+                </div>
+                <button class="reset-btn">Reset</button>
+            </div>
+
+            <div class="quit">
+                <button class="quit-btn">Quit Game</button>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
